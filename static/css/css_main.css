@@ -1,0 +1,280 @@
+.titem li{
+    text-decoration: none;
+    list-style: none;
+}
+.titem{
+    padding-left:5rem;
+    padding-right:5rem;
+}
+.table_d{
+    display: flex;
+    flex-direction: row;
+    width: initial;
+    place-content: center;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-content: flex-start;
+    align-items: center;
+    background-image: linear-gradient(rgba(128,128,128,0.5), rgba(128,128,128,0.5)),url("../img/bar.png");
+    filter: opacity(50);
+}
+
+.table_h{
+    width: 100%;
+    padding-left: 5rem;
+    padding-right: 5rem;
+}
+
+
+/* Css Navbar*/
+.tb_nav{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    align-content: center;
+    flex-wrap: nowrap;
+    width: initial;
+
+}
+
+.tr_nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    align-content: center;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    width: -webkit-fill-available;
+}
+
+body{
+    margin: 10000px;
+}
+
+.link_nav{
+    text-decoration: none;
+    color: whitesmoke;
+}
+
+.link_nav:hover{
+    color: cornflowerblue;
+}
+
+::-webkit-scrollbar{
+    width: 2rem;
+}
+
+/* Css Container*/
+.main_container{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    align-content: space-around;
+    align-items: stretch;
+}
+
+.main_prof{
+    width: 100%;
+    margin-top: 30px;
+}
+
+.carousel-inner{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    align-content: space-around;
+    flex-wrap: nowrap;
+    flex-direction: row;
+}
+
+
+.carousel{
+    width: 100%;
+    position: relative;
+    height: auto;   
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    align-content: space-around;
+    flex-wrap: nowrap;
+    flex-direction: row;
+}
+
+.carousel-caption{
+    margin: 500px;
+}
+
+#cimage{
+    width:100%;
+    max-width:auto;
+    object-fit: cover;
+}
+
+.news_block{
+  display: flex;
+  flex-direction: initial;
+}
+
+.child_block{
+  width:50%;
+  max-width:50%;
+  background-image:url("../img/cb.jpeg");
+  height: 500px;
+  background: no-repeat;
+  background-size: cover;
+}
+
+
+.child_block:nth-child(odd) h3{
+    text-align: left;
+    margin-top: 400px;
+    color: aliceblue;    
+}
+    
+    .child_block:nth-child(even) h3{
+        text-align:right;
+        margin-top: 400px;
+        color: aliceblue;  
+      }
+
+    
+#footer-container{
+    margin-top: 50px;
+    bottom: 0;
+    position: relative;
+}
+
+
+/* Css Footer*/
+
+ul.footer-list{
+    text-align: center;
+}
+
+ul.footer-list > li{
+    padding: 50px 50px;
+    display: inline-block;
+}
+
+ul.medsos{
+    margin-right: 45px;
+}
+
+ul.medsos > li{
+    display: inline-block;
+}
+
+.footer-kanan{
+    margin-left: 400px;
+}
+
+.footer-tengah{
+    margin-right: 0px;
+}
+
+.footer-kiri{
+    margin-right: 400px;
+}
+
+.help-result-box{
+    margin-top: 5px;
+    padding-top: 3px;
+    background-color: #d9d9d9;
+    text-align: center;
+}
+
+.help-result{
+    font-size: 130%;
+    font-weight: bold;
+}
+
+/* Css Prof*/
+.h{
+    font-family:'Helvetica Neue';
+    font-size: 3rem;
+}
+
+.hh{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 4rem;
+    line-height: 0.5;
+}
+
+.hhh{
+    font-size: 1.5rem;
+    line-height: 1.5;
+   
+}
+
+/* Css berita*/
+
+.b_container{
+    margin: 2rem;
+}
+
+.berita{
+    background-color: gray;
+    padding:2rem;
+    margin: 10px;
+    box-sizing: border-box;
+    border: 5px solid black;
+}
+
+.isiberita{
+    vertical-align: top;
+    display: inline-block;
+}
+
+.detailberita{
+    float: right;
+    margin-left: 10px;
+}
+
+/* Css Bantuan*/
+
+.labelform{
+    margin-top: 10px;
+}
+
+.form-help{
+    border-radius: 5px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    background: #f2f2f2;
+    text-align: center;
+    margin: 50px 550px 50px 550px;
+}
+
+
+input[type=text], input[type=email]{
+    float: center;
+    width: 70%;
+    padding: 12px;
+    box-sizing: border-box;
+}
+
+textarea{
+    float: center;
+    width: 70%;
+    height: 100px;
+    padding: 12px;
+    box-sizing: border-box;
+    resize: none;
+}
+
+button[type=submit]{
+    background-color: gray;
+    margin: 20px;
+    color: rgb(255, 255, 255);
+    padding: 10px 20px 10px 20px;
+    cursor: pointer;
+}
+
+.fotoprofil{
+    height: 230px;
+    margin: 3px;
+}

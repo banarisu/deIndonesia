@@ -1,0 +1,101 @@
+<html>
+    <head>
+        <title>DeIndonesia - Halaman Profil</title>
+        <link rel="stylesheet" type="text/css" href="{{ url_for('static',filename='css/css_main.css') }}">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+        <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct" crossorigin="anonymous"></script>
+    </head>
+
+
+    <body>
+      <div class="main_container">
+        <div class="table_d" >
+            <a href='{{ url_for("index") }}'><img src="{{ url_for('static',filename='img/ldi.png') }}"></a>
+            <table class="table_h">
+                <tbody class="tb_nav">
+                    <tr class="tr_nav">
+                        <th class="titem">
+                            <li class="headert_li">
+                                <p>Profil</p>
+                                
+                            </li>
+                        </th>
+                        
+                        <th class="titem">
+                            <li class="headert_li">
+                                <a class="link_nav" href="{{ url_for('berita') }}">Berita</a>
+                            </li>
+                        </th>
+            
+                        <th class="titem">
+                            <li class="headert_li">
+                                <a class="link_nav" href="{{ url_for('help') }}">Bantuan</a>
+                            </li>
+                        </th>
+                    </tr>
+                </tbody>
+    
+                
+            </table>
+    
+        </div>
+        <div class="main_prof">
+            <center>
+                <img src="{{ url_for('static',filename='img/map.png') }}">
+                <h1 class="h">DeIndonesia</h1>
+                <br>
+                <h2 class="hh">
+                    Visi & Misi
+                </h2><br>
+                <h3 class="hhh">
+                    Memberikan informasi yang faktual dan akurat dengan resource gratisan<br />
+                </h3><br><br><br>
+                <h2 class="hh">
+                    Sejarah
+                </h2>
+                <br>
+                <h3 class="hhh"> 
+                    Website ini didirikan pada tahun 2022 dan akan dibubarkan ketika nilai semester sudah keluar
+                </h3><br><br><br>
+                <h2 class="hh">
+                    Tugas & Fungsi
+                </h2>
+                <br>
+                <h3 class="hhh">
+                    Sebagai sarana dan prasarana bagi kami kelompok 5 untuk lulus mata kuliah Pemrograman Web Framework Python
+                </h3><br><br><br>
+                <h2 class="hh">
+                    Profile Anggota
+                </h2>
+                <br>
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQjmAolvB1HWHOCU-qLth3_JsGAXKssywenaA&usqp=CAU" class="fotoprofil" alt="">
+                <img src="https://images.bisnis.com/posts/2019/02/19/890681/marufamin170219-1.jpg" class="fotoprofil" alt="">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQb-Hd63JrijyyLgnzgTwat6_QTRl0cUzfNBQ&usqp=CAU" class="fotoprofil" alt="">
+                <img src="https://awsimages.detik.net.id/community/media/visual/2022/04/13/screenshot-youtube-paytren-official-4_169.jpeg?w=700&q=90" class="fotoprofil" alt="">
+                <img src="http://assets.kompasiana.com/statics/crawl/556e86ef0423bd0b608b4567.jpeg" class="fotoprofil" alt="">
+            </center>
+        </div>
+        <div class="footer" id="footer-container">
+              <div class="u_foot" style="background-color: #c7c7c7; padding: 15px">
+                  <ul class="footer-list">
+                      <li class="footer-kiri"><p style="text-align: left"><strong>Contact Us</strong><br>Alamat: Jl.Kafir No.420 YEHE<br>Jakarta Pusat<br><br>E-mail: admin@kota.id<br>Telp: 081 234 567</p></li>
+                      <li class="footer-tengah"><p style="font-weight: bold">Social media</p>
+                          <ul class="medsos">
+                              <li><a href="https://facebook.com/Jokowi"><img src="{{ url_for('static',filename='img/icon_fb.png') }}"></a><br /></li>
+                              <li><a href="https://twitter.com/jokowi"><img src="{{ url_for('static',filename='img/icon_twt.png') }}"></a><br /></li>
+                              <li><a href="https://instagram.com/jokowi/"><img src="{{ url_for('static',filename='img/icon_ig.png') }}"></a></li>
+                          </ul>
+                      </li>
+                      <li class="footer-kanan"><img src="{{ url_for('static',filename='img/ldi.png') }}"></li>
+                  </ul>
+              </div>
+              <div class="b_footer" style="background-color: gray; padding: 5px 0px 5px 0px">
+                  <center>
+                      <h4>Copyright &copy; deindonesia.go.id 2022</h4>
+                  </center>
+              </div>
+        </div>
+      </div>
+    </body>
+</html>

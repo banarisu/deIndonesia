@@ -1,0 +1,88 @@
+<html>
+    <head>
+        <title>DeIndonesia - Bantuan</title>
+        <link rel="stylesheet" type="text/css" href="{{ url_for('static',filename='css/css_main.css') }}">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+        <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct" crossorigin="anonymous"></script>
+    </head>
+    <body>
+      <div class="main_container">
+        <div class="table_d" >
+            <a href='{{ url_for("index") }}'><img src="{{ url_for('static',filename='img/ldi.png') }}"></a>
+            <table class="table_h">
+                <tbody class="tb_nav">
+                    <tr class="tr_nav">
+                        <th class="titem">
+                            <li class="headert_li">
+                                <a class="link_nav" href="{{ url_for('profil') }}">Profil</a>
+                                
+                            </li>
+                        </th>
+                        
+                        <th class="titem">
+                            <li class="headert_li">
+                                <a class="link_nav" href="{{ url_for('berita') }}">Berita</a>
+                            </li>
+                        </th>
+            
+                        <th class="titem">
+                            <li class="headert_li">
+                                <p>Bantuan</p>
+                            </li>
+                        </th>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+          <!-- Flash message -->
+          
+                  {% with messages = get_flashed_messages() %}
+                    {% if messages %}
+                    <div class="help-result-box">
+                        {% for message in messages %}
+                            <p class="help-result"> {{ message }} </p>
+                        {% endfor %}
+                    </div>
+                    {% endif %}
+                  {% endwith %}
+           
+        <form class="form-help" action="http://localhost:5000/help" method="post">
+            <h2>Form Keluhan/Saran</h2>
+            <p style="padding: 0px 10px 5px 10px">Jika anda memiliki keluhan atau saran yang ingin disampaikan, baik tentang website ini ataupun hal lainnya yang berkaitan dengan kami, silahkan isi form di bawah ini</p>
+            <label class="labelform">Nama Anda:</label><br />
+            <input type="text" name="nama" required><br />
+            <label class="labelform">Email Anda:</label><br />
+            <input type="email" name="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" required><br />
+            <label class="labelform">Judul Keluhan/Saran:</label><br />
+            <input type="text" name="judul" required><br />
+            <label class="labelform">Isi Keluhan/Saran:</label><br />
+            <textarea name="isi" required/></textarea><br />
+            <button type="submit">Submit</button>
+        </form>
+      
+      <div class="footer" id="footer-container">
+              <div class="u_foot" style="background-color: #c7c7c7; padding: 15px">
+                  <ul class="footer-list">
+                      <li class="footer-kiri"><p style="text-align: left"><strong>Contact Us</strong><br>Alamat: Jl.Kafir No.420 YEHE<br>Jakarta Pusat<br><br>E-mail: admin@kota.id<br>Telp: 081 234 567</p></li>
+                      <li class="footer-tengah"><p style="font-weight: bold">Social media</p>
+                          <ul class="medsos">
+                              <li><a href="https://facebook.com/Jokowi"><img src="{{ url_for('static',filename='img/icon_fb.png') }}"></a><br /></li>
+                              <li><a href="https://twitter.com/jokowi"><img src="{{ url_for('static',filename='img/icon_twt.png') }}"></a><br /></li>
+                              <li><a href="https://instagram.com/jokowi/"><img src="{{ url_for('static',filename='img/icon_ig.png') }}"></a></li>
+                          </ul>
+                      </li>
+                      <li class="footer-kanan"><img src="{{ url_for('static',filename='img/ldi.png') }}"></li>
+                  </ul>
+              </div>
+              <div class="b_footer" style="background-color: gray; padding: 5px 0px 5px 0px">
+                  <center>
+                      <h4>Copyright &copy; deindonesia.go.id 2022</h4>
+                  </center>
+              </div>
+        </div>
+      </div>
+    </body>
+
+
+</html>
